@@ -29,7 +29,19 @@ TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder. 
 
 ```dart
-const like = 'sample';
+ CsShadow(
+            shadow: const BoxShadow(
+              color: Colors.black,
+              blurRadius: 2.0,
+              offset: Offset(0, 4),
+              spreadRadius: 5,
+            ),
+            clipper: BezierClipper(1),
+            child: Container(
+              color: Color.fromRGBO(255, 91, 53, 1),
+              height: height,
+            ),
+          ),
 ```
 
 ## Additional information
